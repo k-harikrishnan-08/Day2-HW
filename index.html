@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Day2 homework</title>
+    <style>
+        body{
+            padding: 0 1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        var divref =
+        <>
+        <section>
+            <h2>Topics covered</h2>
+            <p>The following is a list of all the topics we cover in the MDN learning area.</p></section>
+
+        <section>
+                <a href="#">Getting started with the web</a>
+            
+                <ul>Provides a practical introduction to web development for complete beginners.</ul>
+                <br />
+        </section>
+
+        <section>
+                <a href="#">HTML — Structuring the web</a>
+            
+                <ul>HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.</ul>
+                <br/>
+        </section>
+
+        <section>
+                <a href="#">CSS — Styling the web</a>
+            
+                <ul>CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.Provides a practical introduction to web development for complete beginners.</ul>
+
+        </section>
+        
+        </>
+    
+
+        ReactDOM.render(divref,document.getElementById("root"));
+    </script>
+</body>
+</html>
